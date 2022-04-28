@@ -1,0 +1,16 @@
+#install.packages("ISLR")
+library(ISLR)
+data(Auto)
+head(Auto)
+names(Auto)
+help("Auto")
+str(Auto)
+
+summary(Auto$mpg)
+fivenum(Auto$mpg)
+boxplot(Auto$mpg)
+hist(Auto$mpg)
+
+help("read.csv")
+data1 <- read.csv(file.choose(), header = TRUE)
+dim(data1)

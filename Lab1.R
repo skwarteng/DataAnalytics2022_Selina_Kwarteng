@@ -21,7 +21,7 @@ fivenum(EPI_data$EPI,na.rm=TRUE)
 
 stem(EPI_data$EPI)
 hist(EPI_data$EPI, seq(30,95,1),probability = TRUE)
-lines(density(EPI_data$EPI),na.rm = TRUE, bw=1.)
+lines(density(EPI_data$EPI),na.rm = TRUE, bw=1)
 rug(EPI_data$EPI)
 
 plot(ecdf(EPI_data$EPI),do.points=FALSE,verticals = TRUE) 
